@@ -25,16 +25,16 @@
   <div class="container">
     <img src="head-duck.jpg" alt="Photo canvas animate" id="image">
   </div>
-  <p>made with <a href="//github.com/michaelbromley/chromata">chromata</a></p>
+  <!-- <p>made with <a href="//github.com/michaelbromley/chromata">chromata</a></p> -->
 
   <script src="chromata.min.js" type="text/javascript"></script>
   <script type="text/javascript">
     var image = document.querySelector('#image');
     chromata = new Chromata(image, {
-      pathFinderCount: 300,
-      speed: 9,
-      turningAngle: Math.PI/3,
-      colorMode: 'saturation',
+      pathFinderCount: 200,
+      speed: 3,
+      turningAngle: Math.PI/2,
+      colorMode: 'darken',
       lineWidth: 1,
       lineMode: 'square',
       origin: ['left'],
