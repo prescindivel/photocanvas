@@ -32,14 +32,15 @@
     var image = document.querySelector('#image');
     chromata = new Chromata(image, {
       pathFinderCount: 200,
-      speed: 3,
+      speed: 7,
       turningAngle: Math.PI/2,
-      colorMode: 'darken',
+      colorMode: 'color',
+      compositeOperation: 'lighten',
       lineWidth: 1,
       lineMode: 'square',
       origin: ['left'],
       outputSize: 'container', // original, container
-      key: 'high',
+      key: 'low',
       backgroundColor: 'rgba(76, 162, 139, 1)'
   });
   chromata.start();
