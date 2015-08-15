@@ -31,14 +31,14 @@
   <script type="text/javascript">
     var image = document.querySelector('#image');
     chromata = new Chromata(image, {
-      pathFinderCount: 200,
+      pathFinderCount: 30,
       speed: 7,
-      turningAngle: Math.PI/2,
+      turningAngle: Math.PI,
       colorMode: 'color',
       compositeOperation: 'lighten',
       lineWidth: 1,
       lineMode: 'square',
-      origin: ['left'],
+      origin: ['50% 50%'],
       outputSize: 'container', // original, container
       key: 'low',
       backgroundColor: 'rgba(76, 162, 139, 1)'
